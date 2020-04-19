@@ -16,3 +16,7 @@ func GetIndonesiaTimeString() string {
 func PrintTimeLocal() {
 	fmt.Println(time.Now().Local())
 }
+
+func PrintTimeUtc() {
+	fmt.Println(time.Now().UTC())
+}
