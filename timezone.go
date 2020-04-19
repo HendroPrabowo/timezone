@@ -1,6 +1,7 @@
 package timezone
 
 import (
+	"fmt"
 	"time"
 )
 
@@ -10,4 +11,8 @@ func GetIndonesiaTime() time.Time {
 
 func GetIndonesiaTimeString() string {
 	return time.Now().Format("02 January 2006 15:04:05")
+}
+
+func PrintTimeLocal() {
+	fmt.Println(time.Now().Local())
 }
